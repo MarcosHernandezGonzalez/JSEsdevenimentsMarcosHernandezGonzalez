@@ -1,0 +1,20 @@
+<body id="body" (mousedown)="azul()" (mouseup)="taronja()">
+
+<p (window:keydown)="tecla($event)" (window:keyup)="noTecla()">Tecla presionada: {{teclaP}}</p>
+
+<p id="llista"></p>
+
+<button (click)="suma()">Click aqui per aumentar: {{num}}</button>
+<button (click)="reset()">Reinicia</button>
+
+<input type="text" placeholder="Introdueix la combinacio correcta" [(ngModel)]="text" (ngModelChange)="comp()" id="input">
+<iframe id="iframe"></iframe>
+
+<input type="text" placeholder="Nom" [(ngModel)]="nom">
+<input type="text" placeholder="Cognom" [(ngModel)]="cognom">
+<button (click)="concatena()">Enviar</button>
+{{nomCognom}}
+
+</body>
+
+
